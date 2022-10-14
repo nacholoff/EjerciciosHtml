@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+</head>
+
+<body>
+  
+  <h1>Tabla con celdas unidas</h1>              <!--colspan
+                                                rowspan juntar COLumnas y Rowfilas solo sirve en td y th-->
+  
+  <table border="1">
+      <caption> TITULO DE LA TABLA</caption>
+    <!--fila1-->
+    <tr>
+      <td>hola1</td>
+      <td>hola2</td>
+      <td colspan="2">hola3</td> 
+   </tr>
+    <!--fila2-->
+   <tr>
+      <td>hola</td> 
+      <td colspan="2">hola1</td>
+      <td rowspan="2">hola2</td>
+        
+   </tr>
+    <!--fila3-->
+    <tr>
+      <td rowspan="3">hola</td>
+      <td>hola</td>
+      <td>hola</td>
+    </tr>
+    <!--fila4-->
+    <tr>
+      <td colspan="3">hola</td> 
+        
+    </tr>
+    <!--fila5-->
+    <tr>
+      <td colspan="3">hola</td> 
+        
+    </tr>
+    
+
+  </table><br><br>
+
+  <label>Introduzca su contraseña</label><br>
+  <input type="number" name="Contraseña" size="10"/><br><br>
+
+  <label>GÉNERO</label><br>
+  <label>Masculino</label>
+  <input type="radio" name="sexo" value="hombre"/>
+  <label>Femenino</label>
+  <input type="radio" name="sexo" value="mujer"/><br><br>
+
+  <label>Ingles:</label>
+  <input type="checkbox" name="idioma[]" value="Ingles"/> <!--IDIOMA[] PARA QUE NOS DEJE MARCAR VARIAS CASILLAS-->
+  <label>Frances:</label>
+  <input type="checkbox" name="idioma[]" value="Frances"/>
+  <label>Aleman:</label>
+  <input type="checkbox" name="idioma[]" value="Aleman"/>
+  <br><br><br>
+  <b>Simple</b><br>
+  Año de finalizacionde estudios:<br>
+  <select name="selFinEstudis">
+  <option value="2010">2010</option>
+  <option value="2011">2011</option>
+  <option value="2012">2012</option>
+  </select><br><br><br>
+
+  <b>Selecciona las ciudades</b>
+  Ciudades:
+  <select name="ciuDades">
+  <option name="ciudades[] value="Madrid">Madrid</option>
+  <option name="ciudades[] value="Barcelona">Barcelona</option>
+  <option name="ciudades[] value="Murcia">Murcia</option>
+  </select><br><br><br>
+
+  <input type="file" name="adjuntarArchivo"/><br><br><br>
+
+  <input type="button" value="ENVIAR" name="ENVIAR!!"/>
+
+  <input type="button" value="Mostrar mensaje" onclick="alert('tOnto El QuE lO LeA')"
+  
+  <input min="0" max="10" type="range">
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Html</title>
+</head>
+
+<body>
+    <h1><b><u>Practica Formularios</u></b></h1>
+    <h2><b>Ejercicio 1:</b>Realizar el siguiente formulario</h2>
+    <!-- CAMPO DNI-->
+    <label>DNI:</label>
+    <input type="text" name="DNI" maxlength="9" size="9" /><br><br>
+    <!-- CAMPO CONTRASEÑA-->
+    <label>Introduzca su contraseña</label>
+    <input type="password" name="Contraseña" size="10" /><br><br>
+    <!-- Text Area Opinion-->
+    <textarea id="opinion" name="opinion" rows="5" cols="33">Introduzca su opinión:</textarea><br><br>
+    <!-- CAMPO GENERO-->
+    <label>GÉNERO: </label>
+    <label>Masculino</label>
+    <input type="radio" name="sexo" value="hombre" />
+    <label>Femenino</label>
+    <input type="radio" name="sexo" value="mujer" /><br><br>
+    <!-- CAMPO AFICIONES-->
+    <label>AFICIONES:</label><br>
+    <label>DEPORTE:</label>
+    <input type="checkbox" name="AFICIONES[]" value="DEPORTE" />
+    <label>MUSICA:</label>
+    <input type="checkbox" name="AFICIONES[]" value="MUSICA" />
+    <label>VIDEOJUEGOS:</label>
+    <input type="checkbox" name="AFICIONES[]" value="VIDEOJUEGOS" />
+    <label>CINE:</label>
+    <input type="checkbox" name="AFICIONES[]" value="CINE" /><br><br>
+    <!--CAMPO ELECCIONES-->
+    <b>Estilos Musicales Favoritos </b>
+    <select name="estilos[]" multiple="multiple">
+        <option value="Rock">Rock</option>
+        <option value="Pop" selected="selected">Pop</option>
+        <option value="Clasica" selected="selected">Clásica</option>
+        <option value="Trap">Trap</option>
+        <option value="Regueton">Regueton</option>
+        <option value="Heavy" selected="selected">Heavy</option>
+    </select>
+
+</body>
+
+</html>
